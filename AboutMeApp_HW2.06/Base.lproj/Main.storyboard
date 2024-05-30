@@ -34,7 +34,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log in"/>
                                         <connections>
-                                            <segue destination="1UV-xf-ljU" kind="presentation" modalPresentationStyle="fullScreen" id="Bmb-rH-u4V"/>
+                                            <segue destination="1UV-xf-ljU" kind="presentation" modalPresentationStyle="fullScreen" id="bsf-T9-hdV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -56,6 +56,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotUserNameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0G-q6-Mt2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-uF-7gE">
                                         <rect key="frame" x="247.66666666666671" y="0.0" width="105.33333333333334" height="25.666666666666668"/>
@@ -70,6 +73,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotPasswordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3g-86-2kw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -86,6 +92,10 @@
                             <constraint firstItem="GbP-i2-9yi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKC-Qh-rNE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="xPh-QX-Dhc" id="HT5-gY-OiK"/>
+                        <outlet property="userNameTextField" destination="11R-qR-qzr" id="Ju8-Cy-Bcu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,6 +113,9 @@
                                 <rect key="frame" x="20" y="757.66666666666663" width="353" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                                <connections>
+                                    <segue destination="acO-y3-UnZ" kind="unwind" unwindAction="unwindFor:" id="0lM-Bg-5tt"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="q4Y-JT-FGw">
                                 <rect key="frame" x="20" y="80" width="353" height="113.66666666666669"/>
@@ -136,8 +149,12 @@ Unicode: U+1F44B, UTF-8: F0 9F 91 8B</string>
                             <constraint firstItem="ELT-HZ-YPI" firstAttribute="bottom" secondItem="fot-NU-ufg" secondAttribute="bottom" constant="60" id="zqp-dT-KJI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="CYo-aE-f6J" id="ISe-As-RE4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vz3-Rv-XBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="acO-y3-UnZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="855.72519083969462" y="-27.464788732394368"/>
         </scene>
