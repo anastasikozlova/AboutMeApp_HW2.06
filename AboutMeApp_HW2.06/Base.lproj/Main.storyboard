@@ -16,21 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GbP-i2-9yi">
-                                <rect key="frame" x="20" y="345" width="353" height="162.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="pW8-Cy-Clh">
+                                <rect key="frame" x="16" y="268" width="361" height="165"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11R-qR-qzr">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPh-QX-Dhc">
-                                        <rect key="frame" x="0.0" y="64" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="65.333333333333314" width="361" height="34.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqS-PA-kUz">
-                                        <rect key="frame" x="0.0" y="127.99999999999999" width="353" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="130.66666666666669" width="361" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log in"/>
                                         <connections>
@@ -39,39 +39,45 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9ED-Dj-Fg4">
-                                <rect key="frame" x="20" y="531.33333333333337" width="353" height="25.666666666666629"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6Tc-ZJ-ICd">
+                                <rect key="frame" x="16" y="455" width="361" height="28"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN4-F6-OYt">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="25.666666666666668"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xN4-F6-OYt">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.66666666666666" height="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Forgot User Name?">
                                                     <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <color key="NSColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="11" name="Helvetica"/>
                                                         <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="forgotUserNameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0G-q6-Mt2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-uF-7gE">
-                                        <rect key="frame" x="247.66666666666671" y="0.0" width="105.33333333333334" height="25.666666666666668"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-uF-7gE">
+                                        <rect key="frame" x="205.66666666666663" y="0.0" width="155.33333333333337" height="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Forgot Password?">
                                                     <attributes>
-                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <font key="NSFont" size="11" name="Helvetica"/>
                                                         <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="forgotPasswordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3g-86-2kw"/>
@@ -83,13 +89,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GbP-i2-9yi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AKm-uW-uvQ"/>
-                            <constraint firstItem="GbP-i2-9yi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fhe-SZ-Fc4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ED-Dj-Fg4" secondAttribute="trailing" constant="20" id="UuA-0u-Qlm"/>
-                            <constraint firstItem="9ED-Dj-Fg4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZS4-dw-1ci"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GbP-i2-9yi" secondAttribute="trailing" constant="20" id="jbZ-pf-HzP"/>
-                            <constraint firstItem="9ED-Dj-Fg4" firstAttribute="top" secondItem="GbP-i2-9yi" secondAttribute="bottom" constant="24" id="n7c-01-xBf"/>
-                            <constraint firstItem="GbP-i2-9yi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKC-Qh-rNE"/>
+                            <constraint firstItem="pW8-Cy-Clh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="209" id="7zL-ga-b4j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pW8-Cy-Clh" secondAttribute="trailing" constant="16" id="CGq-t4-NU0"/>
+                            <constraint firstItem="6Tc-ZJ-ICd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="455" id="hQE-6w-shq"/>
+                            <constraint firstItem="6Tc-ZJ-ICd" firstAttribute="top" secondItem="pW8-Cy-Clh" secondAttribute="bottom" constant="22" id="moC-xB-x9Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Tc-ZJ-ICd" secondAttribute="trailing" constant="16" id="uLo-wq-s5U"/>
+                            <constraint firstItem="pW8-Cy-Clh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uqD-4B-Ncd"/>
+                            <constraint firstItem="6Tc-ZJ-ICd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zaI-zX-RVh"/>
                         </constraints>
                     </view>
                     <connections>
