@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411039142C19E1D800AB1625 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411039132C19E1D800AB1625 /* User.swift */; };
+		411039162C19E3A100AB1625 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411039152C19E3A100AB1625 /* Person.swift */; };
+		41A3450A2C21B3460018255D /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A345092C21B3460018255D /* NameViewController.swift */; };
+		41A3450C2C21C4E10018255D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3450B2C21C4E10018255D /* BioViewController.swift */; };
 		41F48DD82C04C0C400310CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F48DD72C04C0C400310CD1 /* AppDelegate.swift */; };
 		41F48DDA2C04C0C400310CD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F48DD92C04C0C400310CD1 /* SceneDelegate.swift */; };
 		41F48DDC2C04C0C400310CD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F48DDB2C04C0C400310CD1 /* LoginViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411039132C19E1D800AB1625 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		411039152C19E3A100AB1625 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		41A345092C21B3460018255D /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		41A3450B2C21C4E10018255D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		41F48DD42C04C0C400310CD1 /* AboutMeApp_HW2.06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp_HW2.06.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F48DD72C04C0C400310CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F48DD92C04C0C400310CD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4110390D2C19E0AB00AB1625 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				41F48DDB2C04C0C400310CD1 /* LoginViewController.swift */,
+				41F48DEB2C04C7AC00310CD1 /* WelcomeViewController.swift */,
+				41A345092C21B3460018255D /* NameViewController.swift */,
+				41A3450B2C21C4E10018255D /* BioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4110390E2C19E0EF00AB1625 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				41F48DDD2C04C0C400310CD1 /* Main.storyboard */,
+				41F48DE22C04C0C500310CD1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4110390F2C19E12000AB1625 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41F48DD72C04C0C400310CD1 /* AppDelegate.swift */,
+				41F48DD92C04C0C400310CD1 /* SceneDelegate.swift */,
+				41F48DE52C04C0C500310CD1 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		411039102C19E17000AB1625 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				411039132C19E1D800AB1625 /* User.swift */,
+				411039152C19E3A100AB1625 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		41F48DCB2C04C0C400310CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +105,11 @@
 		41F48DD62C04C0C400310CD1 /* AboutMeApp_HW2.06 */ = {
 			isa = PBXGroup;
 			children = (
-				41F48DD72C04C0C400310CD1 /* AppDelegate.swift */,
-				41F48DD92C04C0C400310CD1 /* SceneDelegate.swift */,
-				41F48DDB2C04C0C400310CD1 /* LoginViewController.swift */,
-				41F48DEB2C04C7AC00310CD1 /* WelcomeViewController.swift */,
-				41F48DDD2C04C0C400310CD1 /* Main.storyboard */,
+				411039102C19E17000AB1625 /* Models */,
+				4110390F2C19E12000AB1625 /* App */,
+				4110390D2C19E0AB00AB1625 /* ViewControllers */,
+				4110390E2C19E0EF00AB1625 /* Storyboards */,
 				41F48DE02C04C0C500310CD1 /* Assets.xcassets */,
-				41F48DE22C04C0C500310CD1 /* LaunchScreen.storyboard */,
-				41F48DE52C04C0C500310CD1 /* Info.plist */,
 			);
 			path = AboutMeApp_HW2.06;
 			sourceTree = "<group>";
@@ -141,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411039162C19E3A100AB1625 /* Person.swift in Sources */,
 				41F48DDC2C04C0C400310CD1 /* LoginViewController.swift in Sources */,
+				41A3450A2C21B3460018255D /* NameViewController.swift in Sources */,
+				41A3450C2C21C4E10018255D /* BioViewController.swift in Sources */,
 				41F48DEC2C04C7AC00310CD1 /* WelcomeViewController.swift in Sources */,
 				41F48DD82C04C0C400310CD1 /* AppDelegate.swift in Sources */,
+				411039142C19E1D800AB1625 /* User.swift in Sources */,
 				41F48DDA2C04C0C400310CD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +346,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RKRK7VXK6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMeApp_HW2.06/Info.plist;
+				INFOPLIST_FILE = AboutMeApp_HW2.06/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RKRK7VXK6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMeApp_HW2.06/Info.plist;
+				INFOPLIST_FILE = AboutMeApp_HW2.06/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
